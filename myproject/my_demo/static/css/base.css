@@ -1,0 +1,20 @@
+body {
+     margin: 0;
+     background-color: #edeeef;
+     font-family: 'Raleway', sans-serif;
+}
+
+a {
+    color: #F72B2F;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+}
+
+.container {
+    margin-top: 60px;
+}

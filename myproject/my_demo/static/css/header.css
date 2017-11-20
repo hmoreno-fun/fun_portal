@@ -1,0 +1,187 @@
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    display: block;
+    height: 60px;
+    -webkit-box-shadow: 0 6px 6px -3px #aaa;
+    -moz-box-shadow: 0 6px 6px -3px #aaa;
+    box-shadow: 0 6px 6px -3px #aaa;
+    -webkit-transition: .15s ease-in-out;
+    -moz-transition: .15s ease-in-out;
+    -o-transition: .15s ease-in-out;
+    transition: .15s ease-in-out;
+    z-index: 30;
+}
+
+header.open {
+    top: 45px;
+    -webkit-transition: .15s ease-in-out;
+    -moz-transition: .15s ease-in-out;
+    -o-transition: .15s ease-in-out;
+    transition: .15s ease-in-out;
+}
+
+/******************/
+/*SANDWICH ELEMENT*/
+/******************/
+
+.sandwich-menu-icon {
+    width: 60px;
+    height: 60px;
+    padding-top: 14px;
+    cursor: pointer;
+}
+
+.sandwich-menu-icon span {
+    display: block;
+    width: 23px;
+    height: 4px;
+    background: #3877BC;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+    margin-top: 4px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.sandwich-menu-icon.open span:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.sandwich-menu-icon span:nth-child(2) {
+    width: 15px;
+    margin-left: 19px;
+}
+
+.sandwich-menu-icon.open span:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transform-origin: 0;
+}
+
+.sandwich-menu-icon.open span:nth-child(2) {
+    width: 0px;
+}
+
+.sandwich-menu-icon.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    transform-origin: 0;
+}
+
+/***********************/
+
+.logo-link:hover {
+    text-decoration: none;
+}
+
+.slogan {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    padding-top: 17.5px;
+    margin-right: -4px;
+    font-weight: 400;
+    font-size: 17px;
+    margin-left: 5px;
+    color: #3877BC;
+    font-family: 'Raleway', sans-serif;
+}
+
+.links-header {
+    display: inline-block;
+    height: 43.5px;
+    text-align: center;
+    padding-top: 17.5px;
+}
+
+.signup-link {
+    margin-right: 15px;
+}
+
+.login-link {
+    background-color: #F72B2F;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.login-link img {
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+.navigation {
+    background-color: rgba(61, 121, 190, 0.95);
+    position: fixed;
+    width: 100%;
+    padding-top: 40px;
+    -webkit-transform: translateY(-150%);
+    -moz-transform: translateY(-150%);
+    -o-transform: translateY(-150%);
+    transform: translateY(-150%);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+.navigation.open {
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    transform: translateY(0%);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+}
+
+.navigation ul li.child {
+    list-style: none;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 28px;
+    line-height: 40px;
+}
+
+.navigation ul li.child a {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    font-size: 35px;
+    line-height: 40px;
+}
+
+.navigation ul li.child.selected a {
+    border: 1px solid white;
+    padding: 16px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}

@@ -1,0 +1,32 @@
+{% load cms_tags menu_tags %}
+
+<header class="header">
+    <div class="sandwich-menu-icon left">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="left">
+        <a class="logo-link" href="/">
+            {% load staticfiles %}
+            <img src="{% static 'images/logo.png' %}" alt="Fun Logo"/>
+        </a>
+        <span class="slogan">The Freedom to Study</span>
+    </div>
+    <div class="right">
+        <div class="search"></div>
+        <a class="signup-link links-header" href="#">
+            <span>Sign up</span>
+        </a>
+        <a class="login-link links-header" href="#">
+            {% load staticfiles %}
+            <img src="{% static 'images/user.png' %}" alt="user"/>
+            <span>Login</span>
+        </a>
+    </div>
+</header>
+<nav class="navigation">
+    <ul class="nav">
+        {% show_menu 0 100 100 100 %}
+    </ul>
+</nav>
